@@ -1,0 +1,71 @@
+
+
+<div class="pt-5">
+    <div class="text-center pt-5 mt-4">
+      <h2 class="text-uppercase fs-1 fw-bolder color-min mb-3">Contact Section</h2>
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <div class="bg-line line me-3"></div>
+        <i class="fa-solid fa-star color-min"></i>
+        <div class="bg-line line ms-3"></div>
+      </div>
+    </div>
+    <div class="pt-5">
+      <div class="container contact-container">
+        <div class="w-50 mx-auto">
+        
+          <div class="mb-3 position-relative">
+            <input
+              type="text"
+              class="form-control border-0 border-bottom"
+              [(ngModel)]="userName"
+              (input)="onInputChange('userName', $event)"
+              placeholder="userName"
+            />
+            <label for="floatingInput"></label>
+            <div class="hidden-word" [class.show]="showUserNameMessage">userName:</div>
+          </div>
+  
+        
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control border-0 border-bottom"
+              [(ngModel)]="userAge"
+              (input)="onInputChange('userAge', $event)"
+              placeholder="userAge"
+            />
+            <label for="floatingInput"></label>
+            <div class="hidden-word" [class.show]="showUserAgeMessage">userAge:</div>
+          </div>
+  
+          
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control border-0 border-bottom"
+              [(ngModel)]="userEmail"
+              (input)="onInputChange('userEmail', $event)"
+              placeholder="userEmail"
+            />
+            <label for="floatingInput"></label>
+            <div class="hidden-word" [class.show]="showUserEmailMessage">userEmail:</div>
+          </div>
+  
+          
+          <div class="mb-4">
+            <input
+              type="text"
+              class="form-control border-0 border-bottom"
+              [(ngModel)]="userPassword"
+              (input)="onInputChange('userPassword', $event)"
+              placeholder="userPassword"
+            />
+            <label for="floatingInput"></label>
+            <div class="hidden-word" [class.show]="showUserPasswordMessage">userPass:</div>
+          </div>
+  
+          <button class="btn color-btn text-white">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>

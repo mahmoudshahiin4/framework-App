@@ -1,0 +1,16 @@
+.nav-bg-color{
+    background-color: #2C3E50;
+}
+a{
+    color: #fff;
+    size: 20px;
+    font-weight: bolder;
+}
+.active-bg{
+    background-color: #1ABC9C;
+}
+nav{
+    padding: 30px;
+    transition: padding 0.3s; 
+} 
+  

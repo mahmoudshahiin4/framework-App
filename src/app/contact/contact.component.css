@@ -1,0 +1,20 @@
+.form-control:focus{
+    box-shadow: none;
+}
+
+.contact-container{
+    
+    height: calc(-250px + 100vh);
+} 
+
+.hidden-word {  
+    position: absolute;  
+    left: 10px;   
+    bottom: 20px;   
+    color: transparent;  
+    transition: top 0.6s ease;}  
+  
+  .hidden-word.show {  
+    top: -30px;  
+    color: #1abc9c;  
+  } 

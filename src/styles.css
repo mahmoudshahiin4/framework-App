@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.my-container{
+    
+    height: calc(-40px + 100vh);
+}
+.bg-color1 {
+    background-color: #1ABC9C;
+}
+.bg-line{
+    background-color: #2C3E50;
+}
+.line{
+    width: 80px;
+    height: 4px;
+}
+.color-min{
+    color: #2C3E50;
+}
+.color-btn{
+    background-color: #1ABC9C;
+}

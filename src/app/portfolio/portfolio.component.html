@@ -1,0 +1,77 @@
+<div class="pt-5">
+    <div class="text-center pt-4 mt-5">
+        <h2 class="text-uppercase fs-1 fw-bolder color-min mb-3">Portfolio section</h2>
+        <div class="d-flex align-items-center justify-content-center mb-3">
+            <div class="bg-line line me-3"></div>
+            <i class="fa-solid fa-star color-min"></i>
+            <div class="bg-line line ms-3"></div>
+        </div>
+    </div> 
+    
+    <div class="container port-container">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4">
+                <div (click)="open('portimages/port1.png')" class="rounded-3 position-relative">
+                    <img class="w-100 rounded-3" src="/portimages/port1.png" alt="">
+                    <div class="my-card position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center rounded-3">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+    
+            </div>
+            <div (click)="open('portimages/port2.png')" class="col-md-6 col-lg-4">
+                <div class="rounded-3 position-relative">
+                    <img class="w-100 rounded-3" src="portimages/port2.png" alt="image 1">
+                    <div
+                        class="my-card position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center rounded-3">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div (click)="open('portimages/port3.png')" class="col-md-6 col-lg-4">
+                <div class="rounded-3 position-relative">
+                    <img class="w-100 rounded-3" src="/portimages/port3.png" alt="">
+                    <div class="my-card position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center rounded-3">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+    
+            </div>
+            <div (click)="open('portimages/port1.png')" class="col-md-6 col-lg-4">
+                <div class="rounded-3 position-relative">
+                    <img class="w-100 rounded-3" src="/portimages/port1.png" alt="">
+                    <div class="my-card position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center rounded-3">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+    
+            </div>
+            <div (click)="open('portimages/port2.png')" class="col-md-6 col-lg-4">
+                <div class="rounded-3 position-relative">
+                    <img class="w-100 rounded-3" src="/portimages/port2.png" alt="">
+                    <div class="my-card position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center rounded-3">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+    
+            </div>
+            <div (click)="open('portimages/port3.png')" class="col-md-6 col-lg-4">
+                <div class="rounded-3 position-relative">
+                    <img class="w-100 rounded-3" src="/portimages/port3.png" alt="">
+                    <div class="my-card position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center rounded-3">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="modal" *ngIf="isOpen" (click)="close()">
+        <div class="" (click)="$event.stopPropagation()">
+            <img [src]="imageSource" alt="modal-image">
+        </div>
+    </div>
+    
+</div>
